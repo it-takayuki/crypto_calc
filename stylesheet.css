@@ -109,3 +109,14 @@ footer {
     margin: 0; 
     padding: 0;
 }
+
+#notice-area {
+    color: #fff;
+}
+#notice-area {
+    background-color: #F5AC34;
+}
+.notice-area {
+    background: #f39800;
+    font-weight: 600;
+}
