@@ -8,7 +8,7 @@ form, input, div {
 
 header {
   background-color: #FFD700;
-  height: 120px;
+  height: 135px;
 }
 
 .header-logo {
@@ -17,10 +17,6 @@ header {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.top-wrapper {
-  padding-top: 25px;
 }
 
 input[type="tel"] {
@@ -40,6 +36,7 @@ input[type="tel"] {
 
 label {
   padding-top: 20px;
+  font-size: 18px;
 }
 
 #f-value {
@@ -77,8 +74,11 @@ texture:focus {
 }
 
 button {
-  width: 85px;
+  width: 200px;
   height: 45px;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .note {
@@ -88,12 +88,15 @@ button {
   display: none;
 }
 
-footer {
+.ad, .ad2 {
   background: -webkit-linear-gradient(top, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
   background-blend-mode: multiply;
-  color: #FFFFFF;
   text-align: center;
+}
+
+.ad2 {
+  display: none;
 }
 
 .box2 {
@@ -106,13 +109,12 @@ footer {
     border-radius: 10px;
 }
 .box2 p {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
 #notice-area {
     color: #fff;
-    margin-bottom: 2em;
 }
 #notice-area {
     background-color: #F5AC34;
@@ -125,8 +127,21 @@ footer {
 .notice-area {
     text-align: center;
     padding: 0.6em;
-    font-size: 14px;
+    font-size: 16px;
 }
 .pitacoin {
   text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+}
+
+#btc {
+  margin-right: 10px;
+}
+
+#eth {
+  margin-left: 10px;
 }
