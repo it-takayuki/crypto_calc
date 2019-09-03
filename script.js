@@ -1,4 +1,10 @@
 $(function(){
+  var position = $('form').offset().top;
+  var wh = $(window).height();
+  var heig = $('header').height() + $('.top-wrapper').height();
+  var ah = wh - heig;
+  $('.ad').css('height', ah + "px");
+
   $('form').submit(function() {
     var inJpy = $('#in-jpy').val();
     var price = $('#price').val();
@@ -37,14 +43,29 @@ $(function(){
       $('#mgf').text(ketamoji(Math.floor(mgf)) + "倍");
     }
     if (fValue) {
+      $("html,body").animate({
+        scrollTop : position
+      }, {
+        queue : false
+      });
       $('.result').show();
-      $('.note').show();
+      $('.ad').hide();
+      heig = $('header').height() + $('.top-wrapper').height() + $('.result').height();
+      var a2h = wh - heig;
+      $('.ad2').css('height', a2h + position + "px");
+      $('.ad2').show();
     }
     if (mgf < 1.1) {
       $('.mgf').hide();
     } else {
       $('.mgf').show();
     }
+    $('#reset').click(function() {
+      $('form')[0].reset();
+      $('.result').hide();
+      $('.ad').show();
+      $('.ad2').hide();
+    });
     return false;
   });
  });
