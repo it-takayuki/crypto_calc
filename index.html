@@ -8,49 +8,45 @@
     <script type="text/javascript" src="script.js"></script>
     <meta name="viewport" content="width=device-width">
     <title>仮想通貨（暗号資産）利益計算機</title>
-    <meta name="description" content="仮想通貨の利益を簡単に計算できるサイト。投資のシミュレーションにも使えます。">
+    <meta name="description" content="仮想通貨による利益を簡単に計算できるサイト。投資のシミュレーションにも使えます。">
     <meta name="google-site-verification" content="qkxaJRRP3ule14JWi7lIB0w6eDknXNbgx4BlcZLFen4" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <p class="header-logo">仮想通貨（暗号資産）<br>利益計算機</p>
+      <p class="header-logo">仮想通貨（暗号資産）<br>
+      <img src="./images/bitcoin.png" alt="" width="50" height="50" id="btc">
+      利益計算機
+      <img src="./images/ethereum.png" alt="" width="32" height="50" id="eth">
+      </p>
     </header>
-    <div align="center">
-      <a href="//af.moshimo.com/af/c/click?a_id=1545168&p_id=1717&pc_id=3248&pl_id=26329&guid=ON" target="_blank" rel="nofollow"><img src="//image.moshimo.com/af-img/1054/000000026329.jpg" width="300" height="250" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=1545168&p_id=1717&pc_id=3248&pl_id=26329" width="1" height="1" style="border:none;">
-    </div>
     <div class="top-wrapper">
-      <a href="//af.moshimo.com/af/c/click?a_id=1545168&p_id=1717&pc_id=3248&pl_id=24595&guid=ON" target="_blank" rel="nofollow">（自由テキスト）</a><img src="//i.moshimo.com/af/i/impression?a_id=1545168&p_id=1717&pc_id=3248&pl_id=24595" width="1" height="1" style="border:none;">
       <div class="box2">
         <p>仮想通貨を持っている人も、<br>まだ持っていない人も。<br>実際に購入した場合の利益を簡単に計算
           <br>（シミュレーション）することができます。</p>
       </div>
-      <a href="https://pitacoin.page.link/4orqdBCEH7MbeT5a9" target="_blank" class="pitacoin">
-      <div id="notice-area" class="notice-area nt-notice">無料でビットコインを毎日もらえるアプリがあるのを<br>知っていますか？ &gt;&gt;</div>
-      </a>
+
         <form>
           <p>1コインが</p>
           <label><input type="tel" id="price" autocomplete="off"> 円の時に</label>
           <label><input type="tel" id="in-jpy" autocomplete="off"> 円分を</label>
           <p>買って保有していれば、</p><br>
           <p>1コインが</p>
-          <label><input type="tel" id="f-price" autocomplete="off"> 円になった場合、</label><br>
-          <button type="submit">計算</button>
+          <label><input type="tel" id="f-price" autocomplete="off"> 円になった場合、</label>
+          <a href="https://www.tadacoin.jp?refer=O6NvHPFPUNmk-FsX0Xuu-g" target="_blank" rel="nofollow" class="pitacoin">
+          <div id="notice-area" class="notice-area nt-notice">
+          仮想通貨は買わなくても【タダで】貰える！<br>ビットコインが無料で貯まるポイントサイト『Tadacoin（タダコイン）』 &gt;&gt;
+          </div></a>
+          <button type="submit" id="calc"><i class="fas fa-calculator"></i> 計算する</button>
         </form><br>
     </div>
-
+    <div class="ad"></div>
       <div class="result">
         <h3 class="mgf">初期投資額の <span id="mgf"></span> 、</h3>
         <h3>保有コインの価値は <span id="f-value"></span> になります。</h3>
         <h3>投資による利益は <span id="profit"></span> です。</h3>
+        <button type="button" id="reset"><i class="fas fa-redo"></i> リセット</button>
       </div>
-
-    <div class="note">
-      <p>※ 計算結果に1円未満の端数が発生する場合は切り捨てて計算しています。<br>
-        ※ 当サイトの計算結果による各種の数値は正確性や確実性を保証するものではありません。<br>目安としての参考値としてご利用下さい。</p>
-    </div>
-
-    <footer style="color:white;">
-      © 2019 <a href="https://twitter.com/takayuki_it0" target="_blank" style="color:white;">Takayuki Ito</a>.
-    </footer>
+      <div class="ad2"></div>
   </body>
 </html>
